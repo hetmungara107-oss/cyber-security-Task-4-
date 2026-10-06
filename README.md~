@@ -1,0 +1,44 @@
+# Task 4 - Setup and Use a Firewall on Linux
+
+## Cyber Security Internship
+
+### Objective
+
+Configure and test basic firewall rules using UFW (Uncomplicated Firewall) on Kali Linux.
+
+The main objective of this task was to understand how a firewall filters network traffic by allowing or blocking specific ports.
+
+---
+
+## Tools Used
+
+- Kali Linux
+- UFW (Uncomplicated Firewall)
+- Netcat (`nc`)
+- Terminal
+
+---
+
+## Task Performed
+
+The following firewall configuration and testing steps were performed:
+
+1. Checked the initial UFW firewall status.
+2. Enabled UFW.
+3. Allowed SSH traffic on port 22.
+4. Added a rule to block Telnet traffic on port 23.
+5. Tested port 23 using Netcat.
+6. Verified that the Telnet connection was refused.
+7. Checked the final firewall rules.
+8. Removed the test firewall rule to restore the original configuration.
+
+---
+
+## Firewall Configuration
+
+### Allow SSH
+
+SSH uses TCP port 22.
+
+```bash
+sudo ufw allow 22/tcp
